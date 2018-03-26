@@ -54,7 +54,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (hasThirdQuestionFirstCheckbox && hasThirdQuestionThirdCheckbox && !hasThirdQuestionSecondCheckbox) {
             score += scoreGranularity;
-        }
+        } else {
+            score += 0;
+            }
+
 
         //Fourth question
         RadioButton fourthQuestionThirdRadioButton = (RadioButton) findViewById(R.id.fourth_question_third_answer);
@@ -84,6 +87,8 @@ public class MainActivity extends AppCompatActivity {
 
         if (hasSixthQuestionFirstCheckBox && hasSixthQuestionSecondCheckBox && hasSixthQuestionThirdCheckBox) {
             score += scoreGranularity;
+        } else {
+            score += 0;
         }
 
         //Seventh question
